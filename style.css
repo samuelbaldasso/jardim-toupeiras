@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/fundo.svg);
+}
+
+.toupeira {
+  background-image: url(assets/toupeira6.svg);
+  width: 223px;
+  height: 169px;
+}
+
+.toupeira:hover {
+  animation: toupeiras 700ms ease-in-out;
+}
+
+.toupeiras {
+  display: grid;
+  grid-template-areas:
+    "A B C D"
+    "E F G H"
+    "I J K L";
+  margin: 200px 50px;
+  gap: 80px;
+}
+
+.toupeiras div:nth-child(1) {
+  grid-area: A;
+}
+.toupeiras div:nth-child(2) {
+  grid-area: B;
+}
+.toupeiras img:nth-child(3) {
+  grid-area: C;
+}
+.toupeiras div:nth-child(4) {
+  grid-area: D;
+}
+.toupeiras div:nth-child(5) {
+  grid-area: E;
+}
+.toupeiras div:nth-child(6) {
+  grid-area: F;
+}
+.toupeiras div:nth-child(7) {
+  grid-area: G;
+}
+.toupeiras div:nth-child(8) {
+  grid-area: H;
+}
+.toupeiras div:nth-child(9) {
+  grid-area: I;
+}
+.toupeiras div:nth-child(10) {
+  grid-area: J;
+}
+.toupeiras div:nth-child(11) {
+  grid-area: K;
+}
+.toupeiras div:nth-child(12) {
+  grid-area: L;
+}
+
+@keyframes toupeiras {
+  0% {
+    background-image: url(assets/toupeira6.svg);
+  }
+
+  20% {
+    background-image: url(assets/toupeira5.svg);
+  }
+  40% {
+    background-image: url(assets/toupeira4.svg);
+  }
+  60% {
+    background-image: url(assets/toupeira3.svg);
+  }
+  80% {
+    background-image: url(assets/toupeira2.svg);
+  }
+  100%{
+    background-image: url(assets/toupeira1.svg);
+  }
+}
